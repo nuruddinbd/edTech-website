@@ -6,13 +6,15 @@
     <title>Edu Zone</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/3b2451c55d.js" crossorigin="anonymous"></script>
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="mb-5">
         <!-- navbar -->
-        <div class="container">
+        <section class="container">
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
                     <div>
@@ -37,28 +39,28 @@
                         <a class="nav-link" href="#">Success</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about-us">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="#registration">Register</a>
                       </li>
                     </ul>
                   </div>
                   <div>
                     <form class="d-flex" role="search">
-                        <button class="btn btn-outline-primary" type="submit">Register</button>
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                   </div>
                 </div>
-              </nav>
-        </div>
+            </nav>
+        </section>
         <!-- slider -->
         <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+                <div class="carousel-inner opacity-75">
+                  <div class="carousel-item active ">
                     <img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle w-50">
+                    <div class="carousel-caption d-md-block position-absolute top-50 start-50 translate-middle w-75"  style="min-height: 220px;">
                       <h1 class="fw-bold">Get Started Digital Learning</h1>
                       <p>WE deliver innovative solutions specifically tailored to your needs.</p>
                       <button class="btn btn-primary fw-semibold">Get Started</button>
@@ -66,7 +68,7 @@
                   </div>
                   <div class="carousel-item">
                     <img src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle w-50">
+                    <div class="carousel-caption d-md-block position-absolute top-50 start-50 translate-middle w-50">
                       <h1 class="fw-bold">Get Started Digital Learning</h1>
                       <p>WE deliver innovative solutions specifically tailored to your needs.</p>
                       <button class="btn btn-primary fw-semibold">Get Started</button>  
@@ -74,7 +76,7 @@
                   </div>
                   <div class="carousel-item">
                     <img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle w-50">
+                    <div class="carousel-caption d-md-block position-absolute top-50 start-50 translate-middle w-50">
                       <h1 class="fw-bold">Get Started Digital Learning</h1>
                       <p>WE deliver innovative solutions specifically tailored to your needs.</p>
                       <button class="btn btn-primary fw-semibold">Get Started</button>
@@ -95,14 +97,16 @@
     <main>
         <!-- popular courses -->
         <section class="container mb-5" id="courses">
-            <div class="d-flex flex-column align-items-center">
-                <h2 class="w-50 d-block fs-1 fw-bold text-center">Discover Our Popular Courses</h2>
-                <p class="w-75 text-muted text-center">Instructors from around the world teach millions of students on EDU-ZONE. We provide the tools and skills to teach what you love.</p>
-            </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-12 col-lg-8 d-lg-flex flex-column justify-content-center">
+              <h2 class="fs-1 fw-bold text-center">Discover Our Popular Courses</h2>
+              <p class="text-muted text-center">Instructors from around the world teach millions of students on EDU-ZONE. We provide the tools and skills to teach what you love.</p>
+            </div>    
+          </div>
         </section>
         <!-- all courses -->
         <section class="container mb-5">
-            <div class="row row-lg-cols-2 row-md-col-1 gy-2">
+            <div class="row row-lg-cols-2 row-md-col-1 gy-3">
                 <!-- course-1 -->
                 <div class="d-md-flex col-12 col-md-12 col-lg-6">
                   <div >
@@ -172,40 +176,38 @@
             </div>                    
         </section>
         <div class="text-center mb-5">
-            <button class="btn btn-info">View All</button>
+            <button class="btn btn-primary fw-bold">View All</button>
         </div>
         <!-- registration -->
-        <div class="container bg-warning p-5 mb-5 rounded-3">
+        <div class="container bg-info p-5 mb-5 rounded-2" id="registration">
             <div class="row align-items-center">
                 <div class="col-12 col-md-12 col-lg-8 text-lg-start text-center">
                     <h1 class="text-white fw-bold">Ready to join?</h1>
                     <p class="text-white">We're a leading marketplace platform for learning and teaching online. Explore some of our most popular content.</p>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center">
-                    <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-outline-primary bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          Registration
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Registration will be held on 01 August 2022 at our main Campus.
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
-                            </div>
-                          </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-primary bg-white fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Registration
+                  </button>    
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-
+                        <div class="modal-body">
+                          Registration will be held on 01 August 2022 at our main Campus.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>     
                 </div>
             </div>
         </div>
@@ -226,7 +228,7 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.The Flexbox layout is best suited to application components and small-scale layouts, while the Grid layout is designed for larger-scale layouts that are not linear in design.The approach of CSS Grid is the layout first, while the Flexbox approach is primarily the content.
+                      The Basic difference between Grid and Flexbox is that flexbox was designed for one-dimensional layout either a Row or Column. Grid was designed for two-dimensional layout Rows, and Columns at the same time.The Flexbox layout is best suited to small-scale layouts, while the Grid layout is designed for larger-scale layouts that are not linear in design.
                     </div>
                   </div>
                 </div>
@@ -238,8 +240,8 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      Bootstrap is an open-source framework that is used to design responsive websites better, faster, and easier. It is a beginner-friendly and the most popular open-source framework that includes HTML, CSS, and JavaScript. Bootstrap can be used to create web applications with any server-side Technology like Java, PHP, etc., and its responsive design allows platforms like Mobile phones, tablets, and computers. Bootstrap contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, icons, and other interface components. It is based on object-oriented CSS. Bootstrap helps to design and develop website templates quickly.
-                      Tailwind CSS is a utility-first CSS framework for building custom user interfaces rapidly and efficiently. It is an inline styling used to achieve a sleek interface without writing code for your own CSS. Tailwind CSS offers customizability and flexibility to transform the appearance and feel of the elements. Tailwind CSS is not the first utility-first CSS library, but it is one of the most popular and light ones. It is a highly customizable, low-level CSS framework, and it provides all the building blocks the developer needs to build a fantastic interface for any website.
+                      Bootstrap is an open-source framework that is used to design responsive websites better, faster, and easier.It is a beginner-friendly and the most popular open-source framework.It is based on object-oriented CSS. Bootstrap helps to design and develop website templates quickly.
+                      Tailwind CSS is a utility-first CSS framework for building custom user interfaces rapidly and efficiently.Tailwind CSS is the only framework that scale on large teams. It's easy to customize, adapts to any design offers customizability and flexibility to transform.
                     </div>
                   </div>
                 </div>
@@ -251,7 +253,7 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model.
+                      The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements.
                     </div>
                   </div>
                 </div>
@@ -263,7 +265,7 @@
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages.Example-The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages.The pages made with semantic elements are much easier to read.Also like header tag defines a header for a web page.nav tag It defines a container for navigation links.article tag This element contains the main part, containing information about the web page etc.
+                      The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages.Example-The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages.The pages made with semantic elements are much easier to read like header tag defines a header for a web page, article tag This element contains the main part, containing information about the web page etc
                     </div>
                   </div>
                 </div>
@@ -278,29 +280,29 @@
               <h1 class="fw-bold">Trusted by over 800+ companies</h1>
             </div>
             <div class="d-flex justify-content-between flex-wrap">
-              <img class="p-1" src="images/company/company-1.png" alt="">
-              <img class="p-1" src="images/company/company-2.png" alt="">
-              <img class="p-1" src="images/company/company-3.png" alt="">
-              <img class="p-1" src="images/company/company-4.png" alt="">
-              <img class="p-1" src="images/company/company-5.png" alt="">
-              <img class="p-1" src="images/company/company-6.png" alt="">
+              <img src="images/company/company-1.png" alt="">
+              <img src="images/company/company-2.png" alt="">
+              <img src="images/company/company-3.png" alt="">
+              <img src="images/company/company-4.png" alt="">
+              <img src="images/company/company-5.png" alt="">
+              <img src="images/company/company-6.png" alt="">
             </div>
           </div>
         </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer id="about-us">
       <div class="container-fluid bg-black p-5 d-flex flex-column align-items-center">
           <h1 class="text-white fw-bold fs-2">EDU ZONE</h1>
-          <p class="text-muted">Office 41, Zawaya Buildin, Ghala Muscat,</p>
-          <p class="text-muted">Sultanate of Oman</p>
-          <p class="text-muted">Privacy Ploicy | Terms of use</p>
+          <p class="text-light">Office 41, Zawaya Buildin, Ghala Muscat,</p>
+          <p class="text-light">Sultanate of Oman</p>
+          <p class="text-light">Privacy Ploicy | Terms of use</p>
           <!-- icons -->
         <div>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/"><i class="bi bi-facebook text-white fs-2 p-2"></i></a>
+          <a href=""><i class="bi bi-twitter text-white fs-2 p-2"></i></a>
+          <a href=""><i class="bi bi-linkedin text-white fs-2 p-2"></i></i></a>
+          <a href=""><i class="bi bi-tiktok text-white fs-2 p-2"></i></a>
         </div>
       </div>
     </footer>
